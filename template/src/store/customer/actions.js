@@ -9,7 +9,7 @@ export default {
     return new Promise((resolve, reject) => {
       Vue.$http('/url', {})
         .then(data => {
-          commit(type.UPDATECUSTOMERINFO, data);
+          commit(type.UPDATE_CUSTOMER_INFO, data);
           resolve();
         })
         .catch(error => {
