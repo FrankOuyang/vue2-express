@@ -11,11 +11,14 @@ import AjaxPlugin from './plugins/ajax';
 import VueLazyload from 'vue-lazyload'; // 引入图片懒加载模块
 import inputPrice from './directive/input-price';
 import inputQuantity from './directive/input-quantity';
+import mixins from './mixins'
 import './assets/css/my.css';
 
 Vue.use(AjaxPlugin);
 Vue.use(inputPrice);
 Vue.use(inputQuantity);
+
+Vue.mixin(mixins)
 
 // error，loading是图片路径, 用require引入
 Vue.use(VueLazyload, {
