@@ -18,8 +18,8 @@
       };
     },
     methods: {
-      ...mapMutations{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}([
-        'UPDATE_CUSTOMER_INFO',
+      ...mapMutations([
+        'UPDATE_CUSTOMER_INFO'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
       ]),
       getCustomerInfo{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
         this.UPDATE_CUSTOMER_INFO({});
