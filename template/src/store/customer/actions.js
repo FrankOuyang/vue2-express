@@ -5,7 +5,7 @@ import Vue from 'vue';
 import * as type from './type';
 
 export default {
-  [type.GETCUSTOMERINFO] ({commit, state}) {
+  [type.GET_CUSTOMER_INFO] ({commit, state}) {
     return new Promise((resolve, reject) => {
       Vue.$http('/url', {})
         .then(data => {

@@ -4,7 +4,7 @@
 import * as type from './type';
 
 export default {
-  [type.UPDATECUSTOMERINFO] (state, {info}) {
+  [type.UPDATE_CUSTOMER_INFO] (state, {info}) {
     state.info = info;
   }
 };
