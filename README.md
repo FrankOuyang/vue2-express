@@ -72,6 +72,22 @@ $ npm run build
 └── package.json
 ```
 
+## 页面跳转
+
+我在mixins中加入了jump方法，用于支持原生的跳转和vue-router的跳转。
+你可以查看`src/main.js`
+``` js
+import mixins from './mixins';
+Vue.mixin(mixins);
+```
+
+jump方法有url和replace两个参数。
+url代表跳转的路径，如果是一个object或者是一个不包含`http`的字符串，则使用vue-router跳转。如果url是一个带`http`的字符串则使用原生跳转。
+replace代表是否替换当前页面，默认是false。
+
+
+你可以直接在method中使用`this.jump(url)`，或者在html上直接使用`@click.prevent="jump('/url')"`。
+
 ## 发送 ajax 请求
 
 由于我非常非常懒，并且觉得`axios`名字比较奇怪，因此利用`VUX`直接把`axios`封装成插件，你可以直接引用插件。
