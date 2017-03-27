@@ -31,4 +31,4 @@ export default {
       return url && typeof url !== 'object' ? url : 'javascript:void(0);';
     }
   }
-}
+};
