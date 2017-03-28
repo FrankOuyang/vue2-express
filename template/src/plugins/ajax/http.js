@@ -71,16 +71,16 @@ export default function (url, json, method = 'post', timeout = 25000) {
           resolve(res.Data);
         } else {
           if (res.ErrorMessage === 'Request failed with status code 401') { // 如需对token过期做特殊处理，请修改
-            reject(res.ErrorMessage);
+            reject(`${url} ${res.ErrorMessage}`);
           } else {
-            reject(res.ErrorMessage);
+            reject(`${url} ${res.ErrorMessage}`);
           }
         }
       })
       .catch((error) => {
         console.error(`ajax error: ${url} ### ${error}`);
         if (error.message) {
-          reject(error.message);
+          reject(`${url} ${error.message}`);
         } else {
           reject(`ajax 异常: ${url}`);
         }
