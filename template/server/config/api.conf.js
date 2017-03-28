@@ -27,6 +27,7 @@ module.exports = function (module, operation, json, token = '', timeout = 15000)
     if (!json) {
       reject({IsSuccess: 0, ErrorMessage: `post data is null`});
     }
+
     if (!module || !operation) {
       reject({IsSuccess: 0, ErrorMessage: `Can't get api, please enter module and operation`});
     }
@@ -34,7 +35,6 @@ module.exports = function (module, operation, json, token = '', timeout = 15000)
     if (!api.module[module] || !api.module[module][operation]) {
       reject({IsSuccess: 0, ErrorMessage: `Can't get api, please confirm module and operation`});
     }
-    ;
 
     let url = api.module[module][operation];
     let req = {
