@@ -53,7 +53,7 @@ import axios from 'axios';
 export default function (url, json, method = 'post', timeout = 25000) {
   var promise = new Promise((resolve, reject) => {
     if (!url || !json) {
-      reject({status: 0, msg: `url or josn is null`});
+      reject(`url or josn is null`);
     }
 
     let req = {
