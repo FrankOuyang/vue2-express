@@ -51,7 +51,7 @@ import axios from 'axios';
  * @returns {*}
  */
 export default function (url, json, method = 'post', timeout = 25000) {
-  var promise = new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     if (!url || !json) {
       reject(`url or josn is null`);
     }
@@ -86,6 +86,4 @@ export default function (url, json, method = 'post', timeout = 25000) {
         }
       });
   });
-
-  return promise;
 };
