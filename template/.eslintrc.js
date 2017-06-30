@@ -45,7 +45,7 @@ module.exports = {
     'space-before-function-paren': 0,
     "new-cap": 0,
     "eol-last": 0,
-    "no-multiple-empty-lines": [1, {"max": 2}]
+    "no-multiple-empty-lines": [1, {"max": 2}],
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
