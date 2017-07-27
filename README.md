@@ -1,6 +1,7 @@
 # vue2-express
 
 > Vue 2.0全家桶套餐，包含vue-router2.0和vuex2.0，集成express作为web server。
+> 目前支持vue2.4和webpack3.0。
 
 ## 前言
 该脚手架以express作为web server，集成了vue2.0、vue-router2.0和vuex2.0。
