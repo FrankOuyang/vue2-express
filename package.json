@@ -2,7 +2,7 @@
   "name": "vue2-express",
   "version": "1.1.0",
   "license": "MIT",
-  "description": "Vue 2.0全家桶套餐，包含vue-router2.0和vuex2.0，集成express作为web server。",
+  "description": "Vue 2.0全家桶套餐，包含vue-router2和vuex2，集成express作为web server。",
   "scripts": {
     "docs": "cd docs && gitbook serve",
     "docs:deploy": "bash ./deploy-docs.sh"
