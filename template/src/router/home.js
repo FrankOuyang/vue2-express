@@ -17,7 +17,7 @@ const routers = [
         resolve(require('../views/Home.vue'));
       });
     },
-    meta: {requiresAuth: false}
+    meta: {requiresAuth: false, title: '首页'}
   }
 ];
 
