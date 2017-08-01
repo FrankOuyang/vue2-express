@@ -17,6 +17,7 @@ import './assets/css/my.css';
 Vue.use(AjaxPlugin);
 Vue.use(inputPrice);
 Vue.use(inputQuantity);
+Vue.use(require('vue-wechat-title'));
 
 Vue.mixin(mixins);
 
