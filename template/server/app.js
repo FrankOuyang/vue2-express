@@ -47,7 +47,7 @@ app.use(session({
 app.use(express.static(__dirname));
 
 //处理webpack服务请求
-app.get('/__webpack_hmr', function(res, res) {
+app.get('/__webpack_hmr', function(req, res) {
   res.send('')
 })
 app.use('/', index);
