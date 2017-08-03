@@ -2,7 +2,7 @@
  * Created by qianqing on 2017/4/17.
  */
 const axios = require('axios');
-const logger = require('../../logger').api;
+const logger = require('../logger').api;
 // axios 配置
 // axios.defaults.timeout = 25000;
 // axios.defaults.baseURL = 'https://api.github.com';
